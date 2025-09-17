@@ -1,0 +1,36 @@
+//code to generate gly percentage in a given gene
+
+
+#include <stdio.h>
+
+int main()
+{
+    
+    int loop=0;
+    int diff=0;
+    int j;
+    
+    int i=2;
+    int k=1;
+    int n;
+    
+    printf("enter the number of time: ");
+    scanf("%d", &n);        
+
+    
+    while(loop<n)
+    {
+
+        printf("%d, ", diff);
+        diff=i-k;
+        j=k;
+        k=i;
+        i=i+j;
+        
+        loop++;
+    }
+    
+
+    return 0;
+}
+
